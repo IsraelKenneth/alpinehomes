@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* START: General styles */
+.max-width {
+  @apply max-w-[1440px] mx-auto;
+}
+
+.margin-nav{
+  @apply sm:mx-16 mx-6 sm:my-10 my-3
+}
+
+.padding-x {
+  @apply sm:px-16 px-6;
+}
+
+.padding-y {
+  @apply py-4;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.custom-btn {
+  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+}
+
+.custom-paragraph {
+  @apply text-base lg:text-lg xl:text-xl;
+}
+/* END: General styles */
+
